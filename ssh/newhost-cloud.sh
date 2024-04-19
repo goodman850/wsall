@@ -21,7 +21,7 @@ else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
 echo -e "${NC}${LIGHT}Telegram : https://t.me/OnlyNet"
-exit 0
+#exit0
 fi
 error1="${RED}[ERROR]${NC}"
 success="${GREEN}[SUCCESS]${NC}"
@@ -29,7 +29,7 @@ clear
 
 if [ -z "$1" ]; then
     echo "Usage: $0 <domain>"
-    exit 1
+    #exit1
 fi
 
 domain="$1"

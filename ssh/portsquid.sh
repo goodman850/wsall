@@ -21,7 +21,7 @@ else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
 echo -e "${NC}${LIGHT}Telegram : https://t.me/OnlyNet"
-exit 0
+#exit0
 fi
 clear
 sqd="$(cat /etc/squid/squid.conf | grep -i http_port | awk '{print $2}' | head -n1)"
@@ -41,7 +41,7 @@ case $prot in
 read -p "New Port Squid: " squid
 if [ -z $squid ]; then
 echo "Please Input Port"
-exit 0
+#exit0
 fi
 cek=$(netstat -nutlp | grep -w $squid)
 if [[ -z $cek ]]; then
@@ -57,7 +57,7 @@ fi
 read -p "New Port Squid: " squid
 if [ -z $squid ]; then
 echo "Please Input Port"
-exit 0
+#exit0
 fi
 cek=$(netstat -nutlp | grep -w $squid)
 if [[ -z $cek ]]; then

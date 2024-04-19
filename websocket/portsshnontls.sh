@@ -19,7 +19,7 @@ else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
 echo -e "${NC}${LIGHT}Telegram : https://t.me/OnlyNet"
-exit 0
+#exit0
 fi
 clear
 #cek port dan tampilkan
@@ -35,7 +35,7 @@ echo -e "======================================"
 read -p "New Port SSH WS : " ws2
 if [ -z $ws2 ]; then
 echo "Please Input Port"
-exit 0
+#exit0
 fi
 cek=$(netstat -nutlp | grep -w $ws2)
 if [[ -z $cek ]]; then

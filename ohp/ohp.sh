@@ -22,7 +22,7 @@ else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 
 echo -e "${NC}${LIGHT}Telegram : https://t.me/onlynet_sup"
-exit 0
+#exit0
 fi
 
 # Download File Ohp

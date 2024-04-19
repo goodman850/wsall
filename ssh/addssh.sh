@@ -21,7 +21,7 @@ else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
 echo -e "${NC}${LIGHT}Telegram : https://t.me/OnlyNet"
-exit 0
+#exit0
 fi
 error1="${RED}[ERROR]${NC}"
 success="${GREEN}[SUCCESS]${NC}"
@@ -60,7 +60,7 @@ if [[ "$Login" = "$cek" ]]; then
 echo -e "======================"
 echo -e "${error1} User ${Login} Sudah Terdaftar"
 echo -e "======================"
-exit 0
+#exit0
 else
 useradd -e `date -d "${hari} days" +"%Y-%m-%d"` -s /bin/false -M $Login
 expi="$(chage -l $Login | grep "Account expires" | awk -F": " '{print $2}')"

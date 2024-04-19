@@ -21,7 +21,7 @@ else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
 echo -e "${NC}${LIGHT}Telegram : https://t.me/OnlyNet"
-exit 0
+#exit0
 fi
 clear
 echo "Please enter your email"
@@ -45,4 +45,4 @@ logfile ~/.msmtp.log
 EOF
 clear
 echo -e "Sender Email Change To $email"
-exit 0
+#exit0

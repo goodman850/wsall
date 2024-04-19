@@ -21,7 +21,7 @@ else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
 echo -e "${NC}${LIGHT}Telegram : https://t.me/OnlyNet"
-exit 0
+#exit0
 fi
 clear
 email=$(cat /home/email)
@@ -43,4 +43,4 @@ echo " Please Wait"
 clear
 echo " Autobackup Has Been Started"
 echo " Data Will Be Backed Up Automatically at 00:05 GMT +7"
-exit 0
+#exit0

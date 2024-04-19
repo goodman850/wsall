@@ -1,11 +1,11 @@
 #!/bin/bash
 if [ "${EUID}" -ne 0 ]; then
 		echo "You need to run this script as root"
-		exit 1
+		#exit1
 fi
 if [ "$(systemd-detect-virt)" == "openvz" ]; then
 		echo "OpenVZ is not supported"
-		exit 1
+		#exit1
 fi
 # My Telegram : https://t.me/onlynet_sup
 # ==========================================
@@ -51,7 +51,7 @@ else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
 echo -e "${NC}${LIGHT}Telegram : https://t.me/OnlyNet"
-exit 0
+#exit0
 fi
 clear
 rm -f update.sh

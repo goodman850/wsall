@@ -21,7 +21,7 @@ else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
 echo -e "${NC}${LIGHT}Telegram : https://t.me/OnlyNet"
-exit 0
+#exit0
 fi
 clear
 MYIP=$(wget -qO- ipinfo.io/ip);
@@ -42,7 +42,7 @@ case $prot in
 read -p "New Port OpenVPN : " vpn
 if [ -z $vpn ]; then
 echo "Please Input Port"
-exit 0
+#exit0
 fi
 cek=$(netstat -nutlp | grep -w $vpn)
 if [[ -z $cek ]]; then
@@ -103,7 +103,7 @@ fi
 read -p "New Port OpenVPN: " vpn
 if [ -z $vpn ]; then
 echo "Please Input Port"
-exit 0
+#exit0
 fi
 cek=$(netstat -nutlp | grep -w $vpn)
 if [[ -z $cek ]]; then

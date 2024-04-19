@@ -128,7 +128,7 @@ querydaemons()
     fi
   done
   echo ''
-  exit "$res"
+  #exit"$res"
 }
 
 restartrunningdaemons()
@@ -169,7 +169,7 @@ restartrunningdaemons()
     fi
   done
   echo ''
-  exit "$res"
+  #exit"$res"
 }
 
 if [ "x$OPTIONS" != "x" ]; then
@@ -189,7 +189,7 @@ else
   fi
 fi
 
-[ -x $DAEMON ] || exit 0
+[ -x $DAEMON ] || #exit0
 
 set -e
 
@@ -237,4 +237,4 @@ case "$1" in
     ;;
 esac
 
-exit "$res"
+#exit"$res"

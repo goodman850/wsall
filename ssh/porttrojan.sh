@@ -21,7 +21,7 @@ else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
 echo -e "${NC}${LIGHT}Telegram : https://t.me/OnlyNet"
-exit 0
+#exit0
 fi
 clear
 tr="$(cat ~/log-install.txt | grep -w "Trojan" | cut -d: -f2|sed 's/ //g')"
@@ -33,7 +33,7 @@ echo -e "======================================"
 read -p "New Port Trojan : " tr2
 if [ -z $tr2 ]; then
 echo "Please Input Port"
-exit 0
+#exit0
 fi
 cek=$(netstat -nutlp | grep -w $tr2)
 if [[ -z $cek ]]; then

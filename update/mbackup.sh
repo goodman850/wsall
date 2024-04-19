@@ -20,7 +20,7 @@ else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
 echo -e "${NC}${LIGHT}Telegram : https://t.me/OnlyNet"
-exit 0
+#exit0
 fi
 clear
 Green_font_prefix="\033[32m" && Red_font_prefix="\033[31m" && Green_background_prefix="\033[42;37m" && Red_background_prefix="\033[41;37m" && Font_color_suffix="\033[0m"
@@ -55,7 +55,7 @@ echo -e "$BLUE╠➣$NC 4$NC. Stop Auto Backup        $BLUE          ║ "
 echo -e "$BLUE╠➣$NC 5$NC. Backup Manualy            $BLUE        ║ " 
 echo -e "$BLUE╠➣$NC 6$NC. Test Send Mail           $BLUE         ║ " 
 echo -e "$BLUE╠➣$NC 7$NC. Restore                     $BLUE      ║ " 
-echo -e "$BLUE╠➣$NC 8$NC. Exit                        $BLUE      ║ " 
+echo -e "$BLUE╠➣$NC 8$NC. #exit                       $BLUE      ║ " 
 echo -e "$BLUE║---------------------------------------║"
 echo -e "$BLUE╠➣ $NC Auto Backup Status $sts    $BLUE        ║"
 echo -e "$BLUE╚═══════════════════════════════════════╝$NC"  

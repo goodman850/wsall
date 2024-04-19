@@ -21,7 +21,7 @@ else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
 echo -e "${NC}${LIGHT}Telegram : https://t.me/OnlyNet"
-exit 0
+#exit0
 fi
 clear
 # ==================================================
@@ -85,7 +85,7 @@ cat > /etc/rc.local <<-END
 #!/bin/sh -e
 # rc.local
 # By default this script does nothing.
-exit 0
+#exit0
 END
 
 # Ubah izin akses
@@ -353,7 +353,7 @@ apt -y install fail2ban
 # Instal DDOS Flate
 if [ -d '/usr/local/ddos' ]; then
 	echo; echo; echo "Please un-install the previous version first"
-	exit 0
+	#exit0
 else
 	mkdir /usr/local/ddos
 fi

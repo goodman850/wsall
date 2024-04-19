@@ -20,7 +20,7 @@ else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
 echo -e "${NC}${LIGHT}Telegram : https://t.me/OnlyNet"
-exit 0
+#exit0
 fi
 clear
 tls="$(cat ~/log-install.txt | grep -w "Vmess TLS" | cut -d: -f2|sed 's/ //g')"
@@ -40,7 +40,7 @@ case $prot in
 read -p "New Port Vmess TLS : " tls1
 if [ -z $tls1 ]; then
 echo "Please Input Port"
-exit 0
+#exit0
 fi
 cek=$(netstat -nutlp | grep -w $tls1)
 if [[ -z $cek ]]; then
@@ -66,7 +66,7 @@ echo "Input Only 2 Character (eg : 69)"
 read -p "New Port Vmess None TLS : " none1
 if [ -z $none1 ]; then
 echo "Please Input Port"
-exit 0
+#exit0
 fi
 cek=$(netstat -nutlp | grep -w $none1)
 if [[ -z $cek ]]; then

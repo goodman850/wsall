@@ -20,7 +20,7 @@ else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
 echo -e "${NC}${LIGHT}Telegram : https://t.me/OnlyNet"
-exit 0
+#exit0
 fi
 clear
 NIC=$(ip -o $ANU -4 route show to default | awk '{print $5}');
@@ -34,7 +34,7 @@ echo -e "======================================"
 read -p "New Port Wireguard : " wg2
 if [ -z $wg2 ]; then
 echo "Please Input Port"
-exit 0
+#exit0
 fi
 cek=$(netstat -nutlp | grep -w $wg2)
 if [[ -z $cek ]]; then

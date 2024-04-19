@@ -22,7 +22,7 @@ is_root() {
         echo -e "Getting Information...."
     else
         echo -e "${Error} ${NC} Please switch to the root user and execute start-menu again ${NC}"
-        exit 1
+        #exit1
     fi
 }
 is_root

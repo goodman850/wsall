@@ -21,7 +21,7 @@ else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
 echo -e "${NC}${LIGHT}Telegram : https://t.me/OnlyNet"
-exit 0
+#exit0
 fi
 clear
 Green_font_prefix="\033[32m" && Red_font_prefix="\033[31m" && Green_background_prefix="\033[42;37m" && Red_background_prefix="\033[41;37m" && Font_color_suffix="\033[0m"
@@ -53,7 +53,7 @@ echo " Please Wait"
 clear
 echo " Autobackup Has Been Started"
 echo " Data Will Be Backed Up Automatically at 00:05 GMT +7"
-exit 0
+#exit0
 }
 function stop() {
 email=$(cat /home/email)
@@ -64,7 +64,7 @@ sleep 1
 echo " Please Wait"
 clear
 echo " Autobackup Has Been Stopped"
-exit 0
+#exit0
 }
 clear
 echo -e "=============================="
