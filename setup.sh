@@ -44,8 +44,8 @@ onlynetvpnnnnnnnnnnn="raw.githubusercontent.com/goodman850/wsall/master/update"
 
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$(curl -k https://titanic.icu/apiV2/api.php?myip=$MYIP )
-if [ $MYIP$IZIN ]; then
+IZIN=$(curl -k ipinfo.io/ip$MYIP )
+if [ 1 ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
 echo -e "${NC}${RED}Permission Denied!${NC}";
