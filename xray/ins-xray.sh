@@ -25,7 +25,7 @@ chronyc sourcestats -v
 chronyc tracking -v
 latest_version="$(curl -s https://api.github.com/repos/XTLS/Xray-core/releases | grep tag_name | sed -E 's/.*"v(.*)".*/\1/' | head -n 1)"
 # / / Installation Xray Core
-xraycore_link="https://github.com/XTLS/Xray-core/releases/download/v$latest_version/xray-linux-64.zip"
+xraycore_link="https://github.com/XTLS/Xray-core/releases/download/v$latest_version/Xray-linux-arm64-v8a.zip"
 
 # / / Make Main Directory
 rm -rf /usr/bin/xray
