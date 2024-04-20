@@ -23,9 +23,12 @@ systemctl enable chrony && systemctl restart chrony
 timedatectl set-timezone Asia/Tehran
 chronyc sourcestats -v
 chronyc tracking -v
-latest_version="$(curl -s https://api.github.com/repos/XTLS/Xray-core/releases | grep tag_name | sed -E 's/.*"v(.*)".*/\1/' | head -n 1)"
+#latest_version="$(curl -s https://api.github.com/repos/XTLS/Xray-core/releases | grep tag_name | sed -E 's/.*"v(.*)".*/\1/' | head -n 1)"
 # / / Installation Xray Core
-xraycore_link="https://github.com/XTLS/Xray-core/releases/download/v$latest_version/Xray-linux-arm64-v8a.zip"
+#xraycore_link="https://github.com/XTLS/Xray-core/releases/download/v$latest_version/Xray-linux-arm64-v8a.zip"
+latest_version="1.8.4"
+# / / Installation Xray Core
+xraycore_link="https://github.com/XTLS/Xray-core/releases/download/v$latest_version/xray-linux-64.zip"
 
 # / / Make Main Directory
 rm -rf /usr/bin/xray
